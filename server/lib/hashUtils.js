@@ -37,3 +37,7 @@ exports.compareHash = (attempted, stored, salt) => {
 exports.createRandom32String = () => {
   return crypto.randomBytes(32).toString('hex');
 };
+
+exports.createRandom40String = () => {
+  return crypto.randomBytes(40).toString('hex');
+};
